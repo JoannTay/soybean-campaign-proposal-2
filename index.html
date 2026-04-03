@@ -4,77 +4,110 @@
 <meta charset="UTF-8">
 <title>马来西亚豆奶市场调研报告</title>
 
+<!-- 字体引入 -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
+:root {
+  --cream: #F7F3EE;
+  --warm-white: #FDFAF7;
+  --ink: #1A1714;
+  --ink-muted: #6B6560;
+  --ink-light: #A8A29E;
+  --gold: #C8892A;
+  --gold-light: #E8C97A;
+  --gold-pale: #F5EDD8;
+  --accent: #3D6B5E;
+  --accent-light: #E8F0EE;
+  --divider: #E8E2DA;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
-    color: #111;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
 }
 
 .section {
-    padding: 80px 100px;
-    background: white;
-    border-bottom: 1px solid #eee;
+  padding: 80px 100px;
+  background: var(--warm-white);
+  border-bottom: 1px solid var(--divider);
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', serif;
+  color: var(--ink);
+  margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 38px;
-    margin-bottom: 20px;
+  font-size: clamp(42px, 5vw, 72px);
+  color: var(--gold);
 }
 
 h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
+  font-size: clamp(28px, 3.5vw, 46px);
+  color: var(--accent);
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6;
+h3 {
+  font-size: 22px;
+  color: var(--ink-muted);
+}
+
+p, li {
+  font-size: 15px;
+  color: var(--ink);
 }
 
 ul {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .grid {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .card {
-    flex: 1;
-    background: #fafafa;
-    padding: 25px;
-    border-radius: 10px;
+  flex: 1;
+  background: var(--gold-pale);
+  padding: 25px;
+  border-radius: 10px;
 }
 
 .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 .table td {
-    border: 1px solid #ddd;
-    padding: 12px;
+  border: 1px solid var(--divider);
+  padding: 12px;
 }
 
 .highlight {
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--gold);
 }
 
 .dark {
-    background: #111;
-    color: white;
+  background: var(--accent);
+  color: var(--warm-white);
 }
 
+.dark h2 {
+  color: var(--gold-light);
+}
 </style>
 </head>
 
@@ -83,7 +116,7 @@ li {
 <!-- 标题 -->
 <div class="section">
     <h1>马来西亚豆奶市场调研报告</h1>
-    <p>用于支持 Vilavie 产品进入市场的策略决策</p>
+    <p> Vilavie 产品进入市场的策略决策</p>
 </div>
 
 <!-- 市场结构 -->
